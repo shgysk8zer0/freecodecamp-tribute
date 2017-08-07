@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url("./vars.css");
+@import url("../core-css/class_rules.css");
+@import url("../core-css/dialog.css");
+@import url("../core-css/details.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./sidebar.css");
+@import url("./footer.css");
+@import url("./btns.css");
+
+* {
+	box-sizing: inherit;
+}
+body {
+	min-height: 100vh;
+	margin: 0;
+	background: gainsboro;
+}
+a {
+	text-decoration: none;
+}
+#about-btn, #share-btn {
+	position: fixed;
+	bottom: 1em;
+	background: none;
+	border: none;
+	color: white;
+}
+#share-btn {
+	right: 0;
+}
+#about-btn {
+	right: calc(1rem + 64px);
+}
+#about-btn, #share-btn svg {
+	filter: drop-shadow(5px 5px 2px rgba(60, 60, 60, 0.7));
+}
+.round {
+	border-radius: 50%;
+}
+[itemtype="http://schema.org/Person"] {
+	max-width: 80vw;
+	min-width: 30vw;
+}
+[itemtype="http://schema.org/Person"] [itemprop="image"] {
+	float: left;
+	shape-outside: circle(50%);
+	margin: 8px;
+}
+dialog[open] {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	max-height: 80vh;
+	max-width: 80vw;
+	overflow-y: auto;
+	padding: 0;
+}
+dialog > header {
+	background-image: linear-gradient(#fefefe, #cdcdcd);
+	position: sticky;
+	top: 0;
+	padding: 0.4em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1.2em;
+	box-shadow: 0 2px 5px rgba(20, 20, 20, 0.7)
+}

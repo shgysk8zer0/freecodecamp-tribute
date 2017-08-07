@@ -1,7 +1,7 @@
 {
   "name": "freecodecamp-tribute",
   "version": "0.0.1",
-  "description": "Build a Tribute Page",
+  "description": "FreeCodeCamp - Build a Tribute Page",
   "keywords": [],
   "author": {
     "name": "Chris Zuber",
@@ -35,7 +35,7 @@
     "update-packages": "npm run git:submodules && npm run git:fetch && npm run build:all",
     "test": "npm run lint:js",
     "postinstall": "npm run git:fetch && npm run git:submodules && npm run build:all"
-},
+  },
   "devDependencies": {
     "eslint": "^3.10.0",
     "eslint-plugin-async-await": "0.0.0",
@@ -54,6 +54,7 @@
     "postcss-cssnext": "^2.9.0",
     "postcss-import": "^9.1.0",
     "postcss-url": "^5.1.2",
+    "svg-sprite-generator": "0.0.7",
     "webpack": "^1.13.2"
   }
 }

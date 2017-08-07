@@ -1,0 +1,4 @@
+button, [role="button"], [data-close], [data-show], [data-show-modal],
+[data-remove], [data-social-share], [data-scroll-to], [data-toggle-hidden] {
+	cursor: pointer;
+}
