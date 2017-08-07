@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("./vars.css");
+@import url("./rem.css");
 @import url("../core-css/class_rules.css");
 @import url("../core-css/dialog.css");
 @import url("../core-css/details.css");
@@ -40,11 +41,11 @@ a {
 .round {
 	border-radius: 50%;
 }
-[itemtype="http://schema.org/Person"] {
+dialog [itemtype="http://schema.org/Person"] {
 	max-width: 80vw;
 	min-width: 30vw;
 }
-[itemtype="http://schema.org/Person"] [itemprop="image"] {
+dialog [itemtype="http://schema.org/Person"] [itemprop="image"] {
 	float: left;
 	shape-outside: circle(50%);
 	margin: 8px;
@@ -71,4 +72,9 @@ dialog > header {
 }
 dialog > header [data-close] {
 	justify-self: flex-end;
+}
+blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #7d7d7d;
 }

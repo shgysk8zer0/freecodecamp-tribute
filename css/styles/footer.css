@@ -6,11 +6,13 @@ footer {
 }
 footer a {
 	color: inherit;
-	transition: transform 800ms ease-in-out, filter 800ms linear;
 	display: inline-block;
-	transform-origin: center bottom;
 }
-footer a:hover {
+footer svg {
+		transition: transform 800ms ease-in-out, filter 800ms linear;
+		transform-origin: center bottom;
+}
+footer svg:hover {
 	transform: scale(1.3) rotateY(360deg);
 	filter: drop-shadow(5px 5px 2px rgba(60, 60, 60, 0.7));
 }
