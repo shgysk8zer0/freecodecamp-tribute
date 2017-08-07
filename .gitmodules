@@ -7,6 +7,9 @@
 [submodule "img/logos"]
 	path = img/logos
 	url = git://github.com/shgysk8zer0/logos.git
+[submodule "img/adwaita-icons"]
+	path = img/adwaita-icons
+	url = git://github.com/shgysk8zer0/adwaita-icons.git
 [submodule "css/core-css"]
 	path = css/core-css
 	url = git://github.com/shgysk8zer0/core-css.git
